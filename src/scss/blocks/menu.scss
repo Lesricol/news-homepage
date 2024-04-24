@@ -1,26 +1,58 @@
 @use '../mixins/responsive.scss' as *;
+@use '../mixins/hover.scss' as *;
 
-.icon-menu{
-    @include responsive(desktop){
-        display: none;
-    }
-}
-.menu{
-    display: none;
+.icon-menu {
   position: absolute;
+  right: 16px;
+  top: 44px;
+  z-index: 10;
+  @include responsive(desktop) {
+    display: none;
+  }
+}
+.menu {
+  position: absolute;
+  display: flex;
   flex-direction: column;
+  justify-content: start;
   align-items: center;
-  top: 106px;
-  gap: 2rem;
-  width: 329px;
-  padding: 39px;
-  &::after{
-    position: absolute;
-  content: "";
-  top: -24px;
+  gap: 1.5rem;
+  top: 0;
   right: 0;
-  width: 24px;
-  height: 24px;
-  background-color: #fffcf8;
+  height: 100vh;
+  padding: 144px 29px 309px 24px;
+  background-color: var(--neutral-color);
+  translate: 100%;
+  transition: translate 0.5s;
+
+  &--show {
+    translate: 0;
+  }
+  &__item {
+    width: 203px;
+    @include responsive(desktop) {
+      width: auto;
+    }
+  }
+  &__link {
+    font-size: 1.125rem;
+    line-height: 24px;
+    @include hover {
+      color: var(--primary-color);
+    }
+  }
+  @include responsive(desktop) {
+    translate: 0;
+    flex-direction: row;
+    gap: 2.5rem;
+    height: auto;
+    padding: 0;
+    top: 94px;
+    right: 165px;
+  }
+}
+.nav {
+  @include responsive(desktop) {
+    margin-left: auto;
   }
 }

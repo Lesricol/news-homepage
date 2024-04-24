@@ -1,18 +1,28 @@
-.title{
-    margin: 0;
+@use '../mixins/responsive.scss' as *;
 
-    &--xl{
-        font-weight: 800;
-        font-size: 2.5rem;
-        line-height: 40px;
-        color: var(--title-xl);
-        
+.title {
+  margin: 0;
+
+  &--xl {
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 40px;
+    color: var(--title-xl);
+    @include responsive(desktop) {
+      font-size: 3.5rem;
+      line-height: 56px;
+      grid-column: 1 / 2;
     }
-    &--l{
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 32px;
-        color: var(--title-l);
-        margin-bottom: 35px;
+  }
+  &--l {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: var(--title-l);
+    margin-bottom: 35px;
+    @include responsive(desktop) {
+      font-size: 2.5rem;
+      line-height: 40px;
     }
+  }
 }

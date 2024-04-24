@@ -1,32 +1,61 @@
-.card-top{
-    display: grid;
-    gap: 1rem;
-    margin-bottom: 64px;
-}
-.card-middle{
-    padding: 24px 20px;
-    background-color: var(--title-xl);
-    margin-bottom: 64px;
-}
+@use '../mixins/responsive.scss' as *;
 
-.new--top, .new--middle{
-    border-bottom: 1px solid #5E607A;
-    padding-bottom: 29px;
-    margin-bottom: 29px;
+.card-top {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 64px;
+  @include responsive(desktop) {
+    width: 730px;
+    margin-bottom: 0;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: 300px 183px;
+    gap: 1.75rem 1.875rem;
+  }
 }
-
-.card-bottom{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.card-middle {
+  padding: 24px 20px;
+  background-color: var(--title-xl);
+  margin-bottom: 64px;
+  @include responsive(desktop) {
+    width: 350px;
+    height: 510px;
+    margin-bottom: 0;
+  }
 }
-
-.last-news{
+.card-container {
+  @include responsive(desktop) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 71px;
+  }
 }
-.last-info{
-    display: flex;
-    flex-direction: column;
-    width: 219px;
+
+.new--top,
+.new--middle {
+  border-bottom: 1px solid #5e607a;
+  padding-bottom: 29px;
+  margin-bottom: 29px;
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  @include responsive(desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.last-news {
+  display: flex;
+  justify-content: space-between;
+  @include responsive(desktop) {
+    gap: 1.5rem;
+  }
+}
+.last-info {
+  display: flex;
+  flex-direction: column;
+  width: 219px;
 }

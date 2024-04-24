@@ -1,7 +1,13 @@
-.image{
-    margin-bottom: 16px;
+@use '../mixins/responsive.scss' as *;
+
+.image {
+  margin-bottom: 16px;
+  @include responsive(desktop) {
+    margin-bottom: 0;
+    grid-column: 1 / 3;
+  }
 }
 
-.image-last{
-    width: 100px;
+.image-last {
+  width: 100px;
 }
