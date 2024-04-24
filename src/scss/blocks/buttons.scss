@@ -1,0 +1,27 @@
+.button--red{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 4.38px;
+    color: var(--link-m);
+    background-color: var(--primary-color);
+    padding: 13px 35px 11px 31px;
+}
+
+.link--m{
+    display: inline-block;
+    font-weight: 800;
+    font-size: 1.25rem;
+    line-height: 24px;
+    color: var(--link-m);
+    margin-bottom: 8px;
+}
+.link--s{
+    display: inline-block;
+    font-weight: 800;
+    font-size: 1.125rem;
+    line-height: 24px;
+    color: var(--link-s);
+    margin-bottom: 8px;
+}

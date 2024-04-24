@@ -1,1 +1,18 @@
+.title{
+    margin: 0;
 
+    &--xl{
+        font-weight: 800;
+        font-size: 2.5rem;
+        line-height: 40px;
+        color: var(--title-xl);
+        
+    }
+    &--l{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        color: var(--title-l);
+        margin-bottom: 35px;
+    }
+}
