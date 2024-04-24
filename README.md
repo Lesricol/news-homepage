@@ -27,7 +27,7 @@ Con este proyecto aprendí como crear un menu despegable con animación, tambié
 
 Si quieres echar un vistazo al proyecto, te recomiendo:
 
-![Captura del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/CAPTURA-DEL-PROYECTO.jpg?raw=true)
+![Captura del proyecto](https://raw.githubusercontent.com/Lesricol/news-homepage/main/design/desktop-design.jpg)
 ![Captura del proyecto](https://raw.githubusercontent.com/Lesricol/news-homepage/main/design/active-states.jpg)
 ![Captura del proyecto](https://raw.githubusercontent.com/Lesricol/news-homepage/main/design/mobile-design.jpg)
 ![Captura del proyecto](https://raw.githubusercontent.com/Lesricol/news-homepage/main/design/mobile-menu.jpg)
