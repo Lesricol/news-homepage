@@ -9,7 +9,7 @@ News homepage
 
 ## Descripción 📑
 
-Es un página en el que tiene un menu despegable y distintas propiedades
+Es una página en la que nos muestras las noticias más revelantes de la tecnología
 
 ## ¿Qué he aprendido en este proyecto? 🙇🏻
 
